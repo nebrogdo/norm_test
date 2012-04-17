@@ -1,9 +1,14 @@
 NormTest::Application.routes.draw do
-  get "pages/home"
+  root :to => 'pages#home'
 
-  get "pages/contact"
+  match '/contact', :to => 'pages#contact'
+  match '/product', :to => 'pages#product'
+  match '/about', :to => 'pages#about'
+  match '/help', :to => 'pages#help'
 
-  get "pages/product"
+#  get "pages/home"
+#  get "pages/contact"
+#  get "pages/product"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
