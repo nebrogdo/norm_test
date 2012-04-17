@@ -3,7 +3,8 @@
 }
 
 body {
-  background: #cff;
+  background-image: url('/images/header_background.png');
+  background-repeat: repeat-x;
 }
 
 header {
@@ -19,6 +20,10 @@ section {
   margin-top: 1em;
   font-size: 120%;
   background: #fff;
+}
+
+.header {
+  height: 90px;
 }
 
 /* Links */
@@ -40,13 +45,14 @@ a:visited {
 /* Navigation */
 
 nav {
-  float: right;
+  float: left;
   background: white;
   padding:0 0.7em;
   white-space: nowrap;
 }
 
 nav ul {
+  height: 30px;
   margin: 0;
   padding: 0;
 }
@@ -83,4 +89,15 @@ a.signup_button {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 10px auto 0px;
+  width: 710px;
+}
+
+footer nav {
+  float: none;
 }
